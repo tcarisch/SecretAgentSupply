@@ -1,0 +1,33 @@
+html {
+  font-size: 18px;
+  background-color: white;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+.company {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0px auto;
+}
+
+.company .container {
+  display: flex;
+  align-items: center;
+  padding: 0.66rem .5rem;
+}
+
+.company img {
+  height: 1.5rem;
+  
+}
+
+.banner {
+  background-image: url(../images/moto.jpeg);
+}
