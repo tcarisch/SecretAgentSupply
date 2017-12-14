@@ -25,9 +25,151 @@ body {
 
 .company img {
   height: 1.5rem;
-  
+
 }
 
 .banner {
-  background-image: url(../images/moto.jpeg);
+  background: url(../images/moto.jpeg) center center/ cover no-repeat;
+  height: 25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+
+}
+
+.headline {
+  background-color: black;
+  color:white;
+  position: relative;
+  top: 9rem;
+  width: 20rem;
+  padding: 2rem 3rem;
+}
+
+.headline h4 {
+  font-size: 1rem;
+}
+
+.headline h1 {
+  font-size: 2rem;
+  margin: 0.25rem 0;
+}
+
+nav {
+  background-color: firebrick;
+  color: white;
+}
+
+nav ul {
+  display:flex;
+  align-items: center;
+  padding: 0.75rem 0;
+  justify-content: space-between;
+}
+
+.mobile-nav {
+  display:none;
+}
+
+.products, .business-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 0 0;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.product-image {
+  display: flex;
+  height: 9rem;
+  justify-content: center;
+  border: 4px solid black;
+  max-width: 100%;
+  padding: 2rem 0;
+}
+
+.product-image img {
+  max-width: 8rem;
+}
+
+.description {
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.info {
+  width: 35%;
+}
+
+.info .title {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+footer {
+  margin-top: 4rem;
+  background-color: black;
+  color: white;
+  padding: 5rem 0px;
+}
+
+@media only screen and (max-width:1024px) {
+  nav ul {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+
+  .product {
+    width: 47%;
+  }
+
+  .product.glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:470px) {
+  .product {
+    width: 90%;
+  }
+  .watch {
+    display: none;
+  }
+  .headline {
+    padding: 1rem 2rem;
+    width: 100%;
+    top: 10rem;
+  }
+  .headline h4 {
+    font-size: 0.77rem;
+  }
+  .headline h1 {
+    font-size: 1rem;
+    margin: 0.25rem 0;
+  }
+  .banner {
+    height: 15rem;
+  }
+  .info {
+    width: 90%;
+    margin:1.5rem 0;
+  }
+  .business-info {
+    flex-direction: column;
+    align-items: space-around;
+    margin: 0 auto;
+  }
 }
